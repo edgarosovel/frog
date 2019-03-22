@@ -3,19 +3,30 @@
   <head>
     <link rel="stylesheet" href="css/main.css">
     <meta charset="UTF-8">
-    <title>My First Phaser Game</title>
+    <title>FROG</title>
     <script src="dist/phaser.min.js"></script>
+    <script src="dist/colyseus.js"></script>
     <script src="game/config.js"></script>
     <script src="game/ServerSimulator.js"></script>
     <script src="game/gameObjects/TileBackground.js"></script>
     <script src="game/gameObjects/InputManager.js"></script>
     <script src="game/gameObjects/Player.js"></script>
-    <script src="game/gameObjects/UI/Leaderboard.js"></script>
-
-    <!-- ESTE SIEMPRE VA AL FINAL -->
+    <script src="game/gameObjects/UI.js"></script>
+    <!-- SCENES -->
+    <script src="game/scenes/Lobby.js"></script>
+    <script src="game/scenes/Game.js"></script>
+    <!-- GM -->
     <script src="game/index.js"></script>
   </head>
   <body>
+
+    <div id="UI" class="UI visible">
+      <h1>Frog Gaga</h1>
+      <input id="inputName" type="text">
+      <button id="buttonPlay">Jugar</button>
+    </div>
+
     <div id="game"></div>
+
   </body>
 </html>
