@@ -4,7 +4,7 @@ var game = new Phaser.Game({
         width: '100%',
         height: '100%'
     },
-    backgroundColor: '#eee', // The background color (blue)
-    scene: [ Lobby, Game ], // The name of the scene we created
+    backgroundColor: '#eee', // The background color
+    scene: [ LobbyScene, GameScene ], // The name of the scene we created
     parent: 'game', // Create the game inside the <div id="game"> 
 });

@@ -1,4 +1,4 @@
-class Lobby extends Phaser.Scene {
+class LobbyScene extends Phaser.Scene {
 
     constructor () {
       super('Lobby');
@@ -10,7 +10,7 @@ class Lobby extends Phaser.Scene {
       game.connection = new Colyseus.Client('ws://localhost:3333');
       game.connection.onOpen.add(this.startUI);
       game.connection.onError.add(function() {
-        console.log('connection error');
+        alert('connection error');
       });
     }
 
